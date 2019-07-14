@@ -1,0 +1,46 @@
+:root {
+  --primary: hsl(0, 0%, 90%);
+  --primary-light: hsla(0, 0%, 90%, 0.8);
+  --accent: hsl(0, 0%, 13%);
+  --accent-light: hsla(0, 0%, 13%, 0.8);
+  --off-white: hsl(0, 0%, 99%);
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  height: 100%;
+  color: hsl(0, 0%, 13%);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  background-color: var(--primary);
+}
+
+section {
+  padding: 1rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  background-color: var(--primary);
+}
