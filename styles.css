@@ -27,13 +27,25 @@ body {
 .grid {
   height: 100%;
   display: grid;
-  grid-template-columns: 400px 1fr;
-  grid-template-rows: 5rem auto 10rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem auto auto 10rem;
   grid-template-areas:
-    "header header"
-    "image description"
-    "footer footer";
+    "header"
+    "image"
+    "description"
+    "footer";
   background-color: var(--primary-light);
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 5rem auto 10rem;
+    grid-template-areas:
+      "header header"
+      "image description"
+      "footer footer";
+  }
 }
 
 header {
@@ -47,6 +59,8 @@ header {
 img {
   align-self: center;
   grid-area: image;
+  display: block;
+  max-width: 100%;
   padding: 1rem;
 }
 
